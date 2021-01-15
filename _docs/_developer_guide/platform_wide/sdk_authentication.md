@@ -1,5 +1,5 @@
 ---
-nav_title: SDK Authenticaton
+nav_title: SDK Authentication
 page_order: 5
 hidden: true
 description: "Verify the identity of SDK requests"
@@ -38,7 +38,7 @@ Generate a public and private key-pair, and use your private key to create a JWT
 
 ### Step 2: [SDK Integration][2]
 
-Enable this feature in your app and supply the Braze SDK with a JWT Token generated from [in previous step][1].
+Enable this feature in your app and supply the Braze SDK with a JWT Token generated from [the previous step][1].
 
 ### Step 3: [Enabling in the Braze Dashboard][3]
 
@@ -75,7 +75,7 @@ Typically, this logic could go wherever your app would normally request the curr
 |`sub`|**Yes**|The "subject" should equal the User ID you supply Braze SDKs when calling `changeUser`|
 |`exp`|**Yes**|The "expiration" of when you want this token to expire.|
 |`aud`|No|The "audience" claim is optional, and if set should equal "braze"|
-|`iss`|No|The "issuer" claim is optiona, and if set should equal your SDK API Key.
+|`iss`|No|The "issuer" claim is optional, and if set should equal your SDK API Key.
 {: .reset-td-br-1 .reset-td-br-2 .reset-td-br-3}
 
 ### JWT Libraries
@@ -263,7 +263,7 @@ Should a user's token expire mid-session, the SDK has a [callback function][7] i
 
 If your server is not able to provide JWT tokens or you notice some integration issue, you can always disable the feature in the Braze Dashboard.
 
-Once disabled, any pending failed SDK requests will eventually be retried by the SDK, and accepted by Braze.
+Once disabled, any pending failed SDK requests will eventually be retried by the SDK and accepted by Braze.
 
 #### Why does this feature use Public/Private keys instead of Shared Secrets?
 
