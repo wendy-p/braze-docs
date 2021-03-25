@@ -62,6 +62,9 @@ If you access the Global Control report without having saved a Global Control Gr
 - Your Global Control Group is formed using Random Bucket Numbers, and thus if you are running any other tests using Random Bucket Numbers segment filters, keep in mind that there could be an overlap between those segments you create, and your Global Control Group users.
 - If two users who have different external user IDs have the same email address, and one of these users is in the Control Group and the other is not, then an email will still be sent to that email address whenever the non-Control Group user is eligible for an email. When this occurs, we will mark both user profiles as having received the campaign or Canvas containing that email.
 
+#### Troubleshooting {#troubleshooting}
+For troubleshooting purposes, it may be helpful to determine whether a particular user is in your Global Control Group. To assess this, look up that user's profile within User Search and navigate to Engagement > Miscellaneous, where Global Control Group will be set to either true or false. Note that you will not see any indication here if you do not have a Global Control Group saved.
+
 ## Best Practices
 
 ### Optimal Control Group Size {#percentage-guidelines}
