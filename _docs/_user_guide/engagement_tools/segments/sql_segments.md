@@ -52,6 +52,8 @@ SELECT DISTINCT user_id FROM "INSERT TABLE NAME"
 
 Before saving, you can run a preview of your query. Query previews are automatically limited to 100 rows and will timeout after 60 seconds. The `user_id` column requirement does not apply when running a preview.
 
+Please note that only users with [permissions to view PII]({{site.baseurl}}/user_guide/administrative/company_settings/security_settings/#view-pii) will have the ability to preview results. 
+
 
 ## Managing SQL Segment Extensions
 
